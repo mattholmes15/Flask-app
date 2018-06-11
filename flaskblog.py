@@ -30,7 +30,7 @@ db = SQLAlchemy(app)
 #    content = db.column(db.Text, nullable=False)
 #
 #def __repr__(self):
-    return f"Post('{self.title}'), '{self.date_posted}')"
+#    return f"Post('{self.title}'), '{self.date_posted}')"
 
 
 
