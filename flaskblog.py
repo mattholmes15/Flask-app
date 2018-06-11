@@ -12,7 +12,7 @@ db = SQLAlchemy(app)
 #DB info here
 
 class User(db.Model):
-    id = db.column(db.Integer, primary key)
+    id = db.column(db.Integer, primary_key)
     username = db.column(db.String(20), unique=True, nullable=False)
     email = db.column(db.String(120), unique=True, nullable=False)
     image_file = db.column(db.String(20)) nullable=False, default='default.jpg')
