@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = /usr/local/bin/docker.build("mrh44/flask-blog-app")
+        app = docker.build("mrh44/flask-blog-app")
     }
 
     stage('Test image') {
