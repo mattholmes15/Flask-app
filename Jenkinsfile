@@ -12,6 +12,8 @@ node {
          * docker build on the command line */
 
         app = docker.build("mrh44/flask-blog-app")
+        sh "which docker"
+        sh "docker --version"
     }
 
 
