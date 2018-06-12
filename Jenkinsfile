@@ -14,7 +14,7 @@ node {
         app = docker.build("mrh44/flask-blog-app")
     }
 
-/*
+
     stage('Test image') {
         /* Ideally, we would run a test framework against our image.
          * For this example, we're using a Volkswagen-type approach ;-) */
@@ -34,4 +34,4 @@ node {
             app.push("latest")
         }
     }
-} */
+}
