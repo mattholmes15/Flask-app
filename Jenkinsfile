@@ -1,4 +1,4 @@
-pipeline {
+node {
     def app
 
     stage('Clone repository') {
@@ -10,7 +10,8 @@ pipeline {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-
+         sh "export PATH=/usr/local/bin:$PATH"
+         sh "echo $PATH"
          sh "which docker"
          sh "docker --version"
          app = docker.build("mrh44/flask-blog-app") /* Issue is here? */
