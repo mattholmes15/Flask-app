@@ -11,9 +11,10 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("mrh44/flask-blog-app")
-        sh "which docker"
-        sh "docker --version"
+         sh "which docker"
+         sh "docker --version"
+         app = docker.build("mrh44/flask-blog-app") /* Issue is here? */
+
     }
 
 
