@@ -1,0 +1,15 @@
+var people = [
+
+{
+"name":"matt",
+"age":"24",
+"height":"178cm"
+},
+
+{
+"name":"john",
+"age":"32",
+"height":"122cm"
+}
+
+]
