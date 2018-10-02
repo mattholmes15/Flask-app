@@ -18,5 +18,5 @@ spec:
       - name: flask 
         image: mrh44/flask-blog-app:latest
         ports:
-        - containerPort: 80
+        - containerPort: 5000
 
